@@ -1,0 +1,44 @@
+Q1) 
+Without using 'use strict', it's harder to avoid bugs and to find bugs. Using strict mode will report errors. 
+If you don't use let or const in strict mode you will get an error.
+
+Q2)
+continue
+default
+delete
+interface
+private
+
+Q3)
+An algorithm is a set of instructions to achieve a specific task.
+A computer program consists of an algorithm(instructions) and data. 
+They are similar in that you can't have a computer program w/out an algorithm. 
+They are different in that an algorithm has only instructions and no data, and a computer program has both. 
+
+
+
+My waking up algorithm
+
+-Alarm goes off
+-Turn off alarm
+-Slowly move out of bed
+-Walk to my sink
+-Grab my spoon
+-Put a half tablespoon of coconut oil on it
+-Put it my mouth
+-Swish it around
+-Body brush my whole body
+-Walk to the restroom
+-Sit on toilet until im finished
+-Walk back to my bedroom
+-Spit out coconut oil
+-Tongue scrape
+-Grab toothpaste
+-Put it on my toothbrush
+-Brush my teeth
+
+
+
+
+
+

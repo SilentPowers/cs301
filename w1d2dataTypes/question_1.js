@@ -3,8 +3,8 @@
 //conversion factor 
 const num = 0.946352946;
 const prompt = require('prompt-sync')();
-const quarts = prompt("Enter quarts to be converted into liters: ")
-
+let quarts = prompt("Enter quarts to be converted into liters: ")
+quarts = Number(quarts);
 const liters = quarts * num;
 
 console.log(liters);

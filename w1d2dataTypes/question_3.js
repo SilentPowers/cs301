@@ -1,5 +1,4 @@
 'use-strict';
-
 //ask for input of number of boxes
 //ask for input of number of boxes he would like in each stack
 //divide number of boxes by number of stacks

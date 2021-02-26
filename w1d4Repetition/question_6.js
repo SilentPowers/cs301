@@ -14,7 +14,6 @@ for(let i = 1; i<=5; i++){
   console.log(row + "\t");
 }
 
-
 // 1
 // 22
 // 333

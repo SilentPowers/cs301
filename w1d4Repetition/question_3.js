@@ -19,6 +19,7 @@ while (pin !== pinIn) {
   pinIn = +prompt('Enter your pin: ');
   if (i === 2) {
     console.log("Sorry but you have been locked out");
+    break;
   }
 }
 if (pin === pinIn) {

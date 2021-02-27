@@ -9,6 +9,7 @@ loop, right when you know number is not prime. For example, you know number 8 is
 prime right on the first loop because it is perfectly divisible by 2 itself, that's why further
 testing is not required. If the number is prime loop will proceed until the end.
 
+
 */
 
 // Question 1 A

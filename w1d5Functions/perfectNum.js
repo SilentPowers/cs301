@@ -7,4 +7,10 @@ Proper divisors of 6 are 1, 2, 3
 Sum of its proper divisors = 1 + 2 + 3 = 6.
 Hence 6 is a perfect numb
 
+Initial a sum to 1 cause 1 always a divisor
+ Loop from 2 to the number – 1
+In the loop check if the index is a factor ie number % index ===0
+ If so add to sum
+ Finally check to see if sum === number then perfec
+
 */

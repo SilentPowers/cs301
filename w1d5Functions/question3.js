@@ -28,14 +28,14 @@ process: Need to get the triangleArea first, need 3 values (a,b,c) for sweep???
 
 function triangleArea(a,b,c){
   let s = (a + b + c) /2;
-  s = (s-a) * (s-b) * (s-c);
+  s = s *((s-a) * (s-b) * (s-c));
   const calcArea = Math.sqrt(s);
   return calcArea;
 }
 
-function roofVolume(area, depth){
-const volume = area * depth;
-return volume;
+function roofVolume(sweep,width, depth){
+const tA = triangleArea(sweep, sweep, width) * depth;
+return tA;
 }
 
 function livingVolume(width, height, depth){
@@ -43,11 +43,12 @@ function livingVolume(width, height, depth){
   return total;
 }
 
-function houseVolume(){
- const totalVolume = livingVolume(width, height, depth)
-  + roofVolume(triangleArea(6,10,6), depth);
- return totalVolume;
+function houseVolume(width, depth, height, sweep){
+
+ const lv = livingVolume(width, height, depth);
+ const rF = roofVolume(sweep,width, depth);
+ return lv + rF;
 }
 
-const volumeOfHouse = houseVolume();
+const volumeOfHouse = houseVolume(width, depth, height, sweep);
 console.log(`House Volume: `+ volumeOfHouse);

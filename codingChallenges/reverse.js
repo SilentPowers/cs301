@@ -3,8 +3,8 @@
 function reverse(number) {
   let reversedNum = 0;
   while (number > 0) {
-    const digit = number % 10;
-    number = Math.floor(number / 10);
+    const digit = number % 10;  // gets last digit
+    number = Math.floor(number / 10);  //gets first digit
     reversedNum = (reversedNum * 10) + digit;
 
   }

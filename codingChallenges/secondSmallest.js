@@ -9,12 +9,14 @@ For e.g. secondSmallest(-1,9,7) → 7
 function secondSmallest(a,b,c){
 
   if(a > b){
-   return a > c ? 'a' : 'c';
+    return b > c ? 'b' : 'c';
+   //return a > c ? 'a' : 'c';
   }
   else if(b > c){
-    return c > a ? 'c' : 'b'
+    return b > a ? 'a' : 'c';
+    //return c > a ? 'c' : 'b'
   }
-return 'c';
+return 'a';
 }
 
-console.log(secondSmallest(4,5,7));
+console.log(secondSmallest(3,2,4));

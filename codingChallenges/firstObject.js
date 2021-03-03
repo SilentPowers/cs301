@@ -30,12 +30,30 @@ connor['instagram'] = '@mightyaimiam';
 
 
 
-//Challenge
+//Challenge 1
 //"Connor has 4 friends, and his best friend is called Sara"
 console.log(connor.firstName + " has " + connor.friends.length + " friends, and his best"
   + " friend is called " + connor.friends[connor.friends.length - 1]);
 
 
-  
-//connor.calcAge(2021);
-console.log(connor.getSummary());
+
+
+//Challenge 2
+const tips = [];
+const totals = [];
+
+const bills = [100,23,45,65,34,77,66,99,293,244];
+
+const calcTip = function(bills){
+  return bills > 50 && bills < 300 ? bills * .15 : bills * .20;
+};
+
+for(let i = 0; i < bills.length; i++){
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tips[i] + bills[i]);
+}
+console.log(totals);
+
+
+

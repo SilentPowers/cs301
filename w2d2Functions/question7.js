@@ -16,9 +16,8 @@ const add = function(a,b){
   return a + b;
 }
 
-const compute = function (add,a,b){
-
-
+const compute = function (fn,a,b){
+  return fn(a,b);
 }
 
 console.log(compute(add,5,6));

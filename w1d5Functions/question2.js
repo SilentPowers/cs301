@@ -1,32 +1,43 @@
 "use strict";
 
-const prompt = require('prompt-sync')();
-const inputRadiusOfCircle = +prompt("Enter the radius of the circle: ")
-const inputHeightOfCylinder = +prompt("Enter the height of the cylinder: ")
-const inputRadiusOfCylinder = +prompt("Enter radius of cyliner: ")
-/*
-volumeOfCylinder
-a. Write a function, areaOfCircle, that computes and returns area of a circle based on the
-value of input radius.
-b. Write a function, volumeOfCylinder, that compute volume of a cylinder and making use
-of the areaOfCircle function.
-c. Write code to call and test your function
-volume of cylinder =	pi × radius2 × height
-area of circle =	pi × radius2
-*/
+/**
+ * @returns {areaOfCircle}
+ * @returns {volumeOfCylinder}
+ * process: calculates volume of a cyliner 
+ * and area of a cirlce with user inputs
+ */
+function questionTwo() {
+  const prompt = require("prompt-sync")();
+  const radiusOfCircle = +prompt("Enter the radius of the circle: ");
+  const heightOfCylinder = +prompt("Enter the height of the cylinder: ");
+  const radiusOfCylinder = +prompt("Enter radius of cyliner: ");
 
-function volumeOfCylinder(height, radius){
-  const volume = areaOfCircle(radius) * height;
-  return volume;
+
+  /**
+   * @param {height} height from user
+   * @param {radius} radius from user
+   * @returns {volume} 
+   * process: calculates volume of a cylinder
+   */
+  function volumeOfCylinder(height, radius) {
+    const volume = areaOfCircle(radius) * height;
+    return volume;
+  }
+
+  /**
+   * @param {radius} radius from user
+   * @returns {area}
+   * process: calculates area of a cirlce
+   */
+  function areaOfCircle(radius) {
+    const area = Math.PI * Math.sqrt(radius);
+    return area;
+  }
+
+  
+return areaOfCircle(radiusOfCircle), volumeOfCylinder(heightOfCylinder, radiusOfCylinder);
 }
 
-function areaOfCircle(radius){
-  const area = Math.PI * Math.sqrt (radius)
-  return area;
-}
-
-console.log(areaOfCircle(inputRadiusOfCircle));
-console.log(volumeOfCylinder(inputHeightOfCylinder, inputRadiusOfCylinder));
-
+questionTwo();
 
 

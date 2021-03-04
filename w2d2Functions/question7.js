@@ -11,13 +11,17 @@ callback.
 first)
 - Refactor to pass add logic as an arrow function. (Make a copy first)
 */
-
-const add = function(a,b){
+//callback fcn
+const add = function(a, b){
   return a + b;
-}
-
-const compute = function (fn,a,b){
-  return fn(a,b);
-}
+};
+//high order fcn because it receives another fcn
+// const compute = function (fn,a,b){
+//   console.log(fn.name);
+//   return fn(a,b);
+// }
+const compute = (fcn, a, b) => {
+  return fcn(a,b);
+};
 
 console.log(compute(add,5,6));

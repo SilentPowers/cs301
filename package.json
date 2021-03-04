@@ -1,5 +1,27 @@
 {
   "dependencies": {
+    "eslint": "^7.21.0",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.6"
+  },
+  "name": "cs301",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilentPowers/cs301.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilentPowers/cs301/issues"
+  },
+  "homepage": "https://github.com/SilentPowers/cs301#readme"
 }

@@ -1,5 +1,5 @@
 "use strict";
-
+exports.areaOfCircle = this.areaOfCircle;
 /**
  * @returns {areaOfCircle}
  * @returns {volumeOfCylinder}

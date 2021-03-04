@@ -2,6 +2,7 @@
 
 const assert = require("assert");
 const fun = require("./question1.js");
+const funInTheSun = require("./question2.js");
 
 
 /* 1a.	Write a function named checkPrime that accepts a parameter and returns true if the argument is a prime number otherwise returns false. */
@@ -18,6 +19,6 @@ describe("checkPrime", function () {
 describe("areaOfCircle", function () {
 
     it("area of unit circle is Pi", function () {
-        assert.strictEqual(fun.areaOfCircle(1), Math.PI * Math.PI);
+        assert.strictEqual(funInTheSun.areaOfCircle(1), Math.PI * Math.PI);
     });
 });

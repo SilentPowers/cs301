@@ -14,8 +14,8 @@ function questionTwo() {
 
 
   /**
-   * @param {height} height from user
-   * @param {radius} radius from user
+   * @param {number} height from user
+   * @param {number} radius from user
    * @returns {volume} 
    * process: calculates volume of a cylinder
    */
@@ -25,8 +25,8 @@ function questionTwo() {
   }
 
   /**
-   * @param {radius} radius from user
-   * @returns {area}
+   * @param {number} radius from user
+   * @returns {number} area of circle
    * process: calculates area of a cirlce
    */
   function areaOfCircle(radius) {

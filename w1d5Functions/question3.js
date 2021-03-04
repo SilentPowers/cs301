@@ -2,7 +2,7 @@
 
 /**
  * process: Calculates total house volume
- *@returns{houseVolume} Returns total house volume
+ *@returns{number} Returns total house volume
  */
 function questionThree() {
   const prompt = require("prompt-sync")();
@@ -14,10 +14,10 @@ function questionThree() {
 
 /**
  * Calculates the area of specified triangle
- * @param {aaa} aaa side 1
- * @param {bbb} bbb side 2
- * @param {ccc} ccc side 3
- * @returns {calcArea} calculated area
+ * @param {number} aaa side 1
+ * @param {number} bbb side 2
+ * @param {number} ccc side 3
+ * @returns {number} calculated area of triangle
  */
 function triangleArea(aaa, bbb, ccc) {
   let s = (aaa + bbb + ccc) / 2;
@@ -28,10 +28,10 @@ function triangleArea(aaa, bbb, ccc) {
 
 /**
  * 
- * @param {sweep} sweep 1 
- * @param {width} width 2
- * @param {depth} depth 3
- * @returns {triA} Calls triangle area and returns it
+ * @param {number} sweep 1 
+ * @param {number} width 2
+ * @param {number} depth 3
+ * @returns {number} Calls triangle area and returns it
  */
 function roofVolume(sweep, width, depth) {
   const triA = triangleArea(sweep, sweep, width) * depth;
@@ -40,10 +40,10 @@ function roofVolume(sweep, width, depth) {
 
 /**
  * 
- * @param {width} width 1
- * @param {height} height 2
- * @param {depth} depth 3
- * @returns {total} sums parameters
+ * @param {number} width 1
+ * @param {number} height 2
+ * @param {number} depth 3
+ * @returns {number} sums parameters
  */
 function livingVolume(width, height, depth) {
   const total = width * height * depth;
@@ -52,10 +52,10 @@ function livingVolume(width, height, depth) {
 
 /**
  * 
- * @param {width} width 1
- * @param {depth} depth 2
- * @param {height} height 3
- * @param {sweep} sweep 4
+ * @param {number} width 1
+ * @param {number} depth 2
+ * @param {number} height 3
+ * @param {number} sweep 4
  * @returns{livVolume} gets living volume 
  * @returns{roVolume} gets roof volume
  */

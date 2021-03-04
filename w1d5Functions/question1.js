@@ -1,8 +1,8 @@
 "use strict";
-//export.testPrime = testPrime;
+exports.testPrime = testPrime;
 
-const prompt = require("prompt-sync")();
-const input = +prompt("Enter a number to check if its prime: ");
+// const prompt = require("prompt-sync")();
+// const input = +prompt("Enter a number to check if its prime: ");
 
 /**
  * @param {number} num is the parameter 
@@ -19,4 +19,4 @@ function testPrime(num) {
 }
 
 //console.log(testPrime(1));
-console.log(testPrime(input));
+//console.log(testPrime(input));

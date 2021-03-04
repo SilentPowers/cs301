@@ -6,13 +6,13 @@ const funInTheSun = require("./question2.js");
 
 
 /* 1a.	Write a function named checkPrime that accepts a parameter and returns true if the argument is a prime number otherwise returns false. */
-describe("checkPrime", function () {
+describe("testPrime", function () {
 
     it("37 is prime", function () {
-        assert.strictEqual(fun.checkPrime(37), true);
+        assert.strictEqual(fun.testPrime(37), true);
     });
     it(" 77 is not prime", function () {
-        assert.strictEqual(fun.checkPrime(77), false);
+        assert.strictEqual(fun.testPrime(77), false);
     });
 });
 

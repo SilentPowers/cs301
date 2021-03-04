@@ -1,5 +1,5 @@
 "use strict";
-export.testPrime = testPrime;
+//export.testPrime = testPrime;
 
 const prompt = require("prompt-sync")();
 const input = +prompt("Enter a number to check if its prime: ");

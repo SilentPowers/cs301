@@ -1,7 +1,7 @@
 "use strict";
 
 const assert = require("assert");
-const fun = require("./functions.js");
+const fun = require("./question1.js");
 
 
 /* 1a.	Write a function named checkPrime that accepts a parameter and returns true if the argument is a prime number otherwise returns false. */

@@ -5,7 +5,8 @@ exports.rotateLeft = rotateLeft;
 exports.rotateRight = rotateRight;
 exports.rotateNRight = rotateNRight;
 exports.fmrString = fmrString;
-
+exports.filterPalindromes = filterPalindromes;
+exports.matrixAddition = matrixAddition;
 //1
 /**
  * 
@@ -104,6 +105,48 @@ function fmrString(first, second, third) {
     sumAllLeft += sumDigits;
   }
   return sumAllLeft;
+}
+
+//problem 8
+/**
+ * 
+ * @param {array} strings array
+ * @returns{array} arary of strings 
+ * process: get first element of array, get first and last letter, compare first and last, if
+ *  true then compare the next two until all letters have been compared. If false at anytime,
+ * then not a palindrome
+ * trure
+ */
+ function filterPalindromes(strings) {
+  const palindromeArray = [];
+
+  for (const word of strings) {
+    let words = "";
+    for (let i = word.length - 1; i >= 0; i--) {
+      words += word[i];
+    }
+    if (word === words) {
+      palindromeArray.push(words);
+    }
+  }
+  return palindromeArray;
+}
+
+
+//problem 9
+/**
+ * 
+ * @param {*} array double array of number
+ * @returns {number} sum of all numbers in array46
+ */
+function matrixAddition(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array[i].length; j++) {
+      sum += array[i][j];
+    }
+  }
+  return sum;
 }
 
 exports.getMiddle = getMiddle;

@@ -15,25 +15,20 @@ array of strings and returns array of palindrome strings only.
  * trure
  */
 function filterPalindromes(strings) {
-  let words = "";
-  let i;
-  for(const word of strings){
-    i = word.length;
-    console.log(i);
-    const first = word[i];
-  
-    console.log("f" + first);
+  const palindromeArray = [];
 
+  for (const word of strings) {
+    let words = "";
+    for (let i = word.length - 1; i >= 0; i--) {
+      words += word[i];
+    }
+    if (word === words) {
+      palindromeArray.push(words);
+    }
   }
-    //const last = word[];
-  //  console.log("" + last);
-  //   for (let j = strings.length-1; j > i; j--){
-  //   const last = word[j];
-  //   console.log("l" + last);
-  // }
-  
+  return palindromeArray;
 }
 
 
 
-filterPalindromes(["not", "a", "kayak", "eagle", "racecar"]);
+console.log(filterPalindromes(["not", "a", "kayak", "eagle", "racecar"]));

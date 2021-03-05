@@ -22,7 +22,7 @@ const filterRange = function (arr, a, b) {
       continue;
     }
     else{
-    finalArray[i] = filterdArray[i];
+    finalArray.push(filterdArray[i]);
   }
 }
   console.log(finalArray);

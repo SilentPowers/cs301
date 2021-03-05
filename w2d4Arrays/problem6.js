@@ -29,7 +29,7 @@ function fmrString(first, second, third) {
   for (const element of array) {
     const Lastnum = element % 10;
     let firstNum = Math.floor(element / 10);
-    if (firstNum >= 10) {
+    while (firstNum >= 10) {
       firstNum = Math.floor(firstNum / 10);
     }
     sumDigits = Lastnum + firstNum;
@@ -40,4 +40,4 @@ function fmrString(first, second, third) {
 }
 
 
-fmrString(302, 105, -22);
+fmrString(302, 1005, -22);

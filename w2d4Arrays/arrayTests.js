@@ -97,7 +97,7 @@ describe("filterPalindromes", function () {
 describe("Matrix", function () {
     describe("matrixAddition", function () {
         it("matrix addition of [[0,1,2],[9,8,7]] and [[6,5,4], [3,4,5]]  should be [ [ 6, 6, 6 ], [ 12, 12, 12 ] ]", function () {
-            assert.deepStrictEqual(matrixAddition([[0, 1, 2], [9, 8, 7]], [[6, 5, 4], [3, 4, 5]]), [[6, 6, 6], [12, 12, 12]]);
+            assert.deepStrictEqual(arrays.matrixAddition([[0, 1, 2], [9, 8, 7]], [[6, 5, 4], [3, 4, 5]]), [[6, 6, 6], [12, 12, 12]]);  //NOTE THE CHANGE TO THIS LINE
         });
     });
 });

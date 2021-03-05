@@ -29,15 +29,15 @@ function fmrString(first, second, third) {
   for (const element of array) {
     const Lastnum = element % 10;
     let firstNum = Math.floor(element / 10);
-    if (firstNum > 9) {
+    if (firstNum >= 10) {
       firstNum = Math.floor(firstNum / 10);
     }
     sumDigits = Lastnum + firstNum;
     sumAllLeft += sumDigits;
   }
+  console.log(sumAllLeft);
   return sumAllLeft;
 }
 
 
-//console.log(fmrString(44, 23, 32, -33));
-console.log(fmrString(32, 105, -22));
+fmrString(302, 105, -22);

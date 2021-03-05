@@ -17,7 +17,7 @@ const filterRange = function (arr, a, b) {
   }
   console.log(filterdArray);
   for (let i = 0; i < filterdArray.length; i++) {
-    if(filterdArray[i] === undefined || filterdArray[i] === "<1 empty item>"){
+    if(filterdArray[i] === undefined || filterdArray[i] === " "){
       console.log(filterdArray[i]);
       continue;
     }

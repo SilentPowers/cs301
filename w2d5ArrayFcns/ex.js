@@ -4,9 +4,14 @@ const invertArray = myArray.reverse();
 
 
 console.log(invertArray.join(" "));
-console.log(invertArray);
+
 
 
 const array = [34,33,44,456,123];
 array.splice(2,4);
-console.log(array);
+//console.log(array);
+
+const newArr = array.slice();
+const newArr2 = [...array];
+console.log(newArr);
+console.log(newArr2);

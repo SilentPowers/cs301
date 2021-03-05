@@ -26,15 +26,18 @@ function fmrString(first, second, third) {
       array.pop(i);
     }
   }
-    for(const element of array){
-      const Lastnum = element % 10;
-      const firstNum = Math.floor(element/10);
-      sumDigits = Lastnum + firstNum;
-      sumAllLeft += sumDigits;
+  for (const element of array) {
+    const Lastnum = element % 10;
+    let firstNum = Math.floor(element / 10);
+    if (firstNum > 9) {
+      firstNum = Math.floor(firstNum / 10);
     }
-    return sumAllLeft;
+    sumDigits = Lastnum + firstNum;
+    sumAllLeft += sumDigits;
+  }
+  return sumAllLeft;
 }
 
 
-console.log(fmrString(44, 23, 32, -33));
-console.log(fmrString(32, 105,  -22));
+//console.log(fmrString(44, 23, 32, -33));
+console.log(fmrString(32, 105, -22));

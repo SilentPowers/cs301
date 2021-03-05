@@ -96,7 +96,10 @@ function fmrString(first, second, third) {
   }
   for (const element of array) {
     const Lastnum = element % 10;
-    const firstNum = Math.floor(element / 10);
+    let firstNum = Math.floor(element / 10);
+    if (firstNum > 9) {
+      firstNum = Math.floor(firstNum / 10);
+    }
     sumDigits = Lastnum + firstNum;
     sumAllLeft += sumDigits;
   }

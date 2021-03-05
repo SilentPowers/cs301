@@ -15,11 +15,13 @@ array of strings and returns array of palindrome strings only.
  * trure
  */
 function filterPalindromes(strings) {
-  let word = "";
+  let words = "";
   let i;
-  for(word of strings){
+  for(const word of strings){
+    i = word.length;
+    console.log(i);
     const first = word[i];
-    const last = word[];
+  
     console.log("f" + first);
 
   }

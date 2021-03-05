@@ -15,13 +15,17 @@ const filterRange = function (arr, a, b) {
       filterdArray[i] = arr[i];
     }
   }
-  console.log(arr);
+  console.log(filterdArray);
   for (let i = 0; i < filterdArray.length; i++) {
-    if(filterdArray[i] !== undefined || filterdArray[i] !== " "){
-      finalArray[i] = filterdArray[i];
-      console.log(finalArray);
+    if(filterdArray[i] === undefined || filterdArray[i] === "<1 empty item>"){
+      console.log(filterdArray[i]);
+      continue;
     }
-    }
+    else{
+    finalArray[i] = filterdArray[i];
+  }
+}
+  console.log(finalArray);
 
   return filterdArray;
 

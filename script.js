@@ -93,7 +93,6 @@ for(const [team, num] of Object.entries(game.odds)){
 //Destructuring assignment
 //const [first, second] = restaurant.categories;
 
-const [first, , second] = restaurant.categories;
 
 const [start, main] = restaurant.order(2, 0);
 //console.log(start, main);

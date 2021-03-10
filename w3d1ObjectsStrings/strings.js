@@ -86,7 +86,19 @@ returns the common suffix.
 */
 
 const suffix = function (str1, str2) {
+  const strArray1 = str1.split("");
+  const strArray2 = str2.split("");
+  let newArray = [];
+  for(let i = 0; i < strArray1.length; i++){
+   
+    strArray1[i].includes(strArray2[i])
+      newArray.push(strArray2[i]);
+    
+      console.log(strArray2[i]);
+  }
+  console.log(newArray);
 
+  //console.log(strArray1, strArray2);
 };
 
 suffix("jackson", "johnson");

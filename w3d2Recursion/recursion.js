@@ -11,12 +11,12 @@ const power = function (x, n) {
 const countDigits = function (number) {
   let lastNum = number % 10;
   if (number < 1) {
-    return number;
+    return lastNum;
   }
   return lastNum + countDigits(Math.floor(number / 10));
 };
 
-console.log(countDigits(123));
+console.log(countDigits(126));
 
 
 const reverse = function (string) {

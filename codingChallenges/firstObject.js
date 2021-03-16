@@ -1,3 +1,5 @@
+"use strict";
+
 const connor = {
   firstName: 'Connor',
   lastName: 'Lakour',

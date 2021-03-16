@@ -1,3 +1,6 @@
+"use strict";
+
+
 const largest = function (array) {
   var maxes = [];
   for (let i = 0; i < array.length; i++) {
@@ -13,7 +16,7 @@ const largest = function (array) {
     maxes.push(max);
   }
   return maxes;
-}
+};
 
 
 console.log(largest([[3, 5, 6], [5, 9, 2], [9, 4, 1], [10, 5, 7]]));

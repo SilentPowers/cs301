@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * 
+ * @param {*} number 
+ * @returns 
+ */
 function reverse(number) {
   let reversedNum = 0;
   while (number > 0) {
@@ -8,10 +13,15 @@ function reverse(number) {
     reversedNum = (reversedNum * 10) + digit; //accumulates and multiplies to get number in reverse
 
   }
-  //console.log(isPrime(reversedNum));
-  return isPrime(reversedNum);
+  let bool = isPrime(reversedNum);
+  const value = bool === true ? "number is prime" : " number is not prime";
+  return [reversedNum,value] ;
 }
-
+/**
+ * 
+ * @param {*} num 
+ * @returns 
+ */
 function isPrime(num) {
   for (let i = 2; i < num; i++) {
     if (num % i === 0) {
@@ -20,6 +30,6 @@ function isPrime(num) {
   }
   return num > 2;
 }
-console.log(reverse(32));
+console.log(reverse(42));
 
 

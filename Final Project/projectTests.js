@@ -27,74 +27,74 @@ const test = require("./programmingProject.js");
 // You may assume that each input would have exactly one solution, and you may not use the
 // same element twice. You can return the answer in any order.
 
-// describe("sum to target", function () {
-//   it("Index of the numbers whose sum is 9 is [0,1]", function () {
-//     assert.deepStrictEqual(test.addToTarget([2, 7, 11, 15], 9), [0, 1]);
-//   });
+describe("sum to target", function () {
+  it("Index of the numbers whose sum is 9 is [0,1]", function () {
+    assert.deepStrictEqual(test.addToTarget([2, 7, 11, 15], 9), [0, 1]);
+  });
 
-//   it("Index of the numbers whose sum is 6 is [0,2]", function () {
-//     assert.deepStrictEqual(test.addToTarget([2, 3, 4], 6), [0, 2]);
-//   });
+  it("Index of the numbers whose sum is 6 is [0,2]", function () {
+    assert.deepStrictEqual(test.addToTarget([2, 3, 4], 6), [0, 2]);
+  });
 
-//   it("Index of the numbers whose sum is 6 is [0,1]", function () {
-//     assert.deepStrictEqual(test.addToTarget([3, 3], 6), [0, 1]);
-//   });
-// });
+  it("Index of the numbers whose sum is 6 is [0,1]", function () {
+    assert.deepStrictEqual(test.addToTarget([3, 3], 6), [0, 1]);
+  });
+});
 
 // 3. Write a function named mostFrequent() that given an array, finds the most frequent element
 // in it. If there are multiple elements that appear maximum number of times, returns any one of
 // them
 
-// describe("Most frequent", function () {
-//   it("The most frequent in the list is 4", function () {
-//     assert.strictEqual(test.mostFrequent([4, 3, 6, 8, 3, 8, 4, 9, 6, 4]), 4);
-//   });
-// });
+describe("Most frequent", function () {
+  it("The most frequent in the list is 4", function () {
+    assert.strictEqual(test.mostFrequent([4, 3, 6, 8, 3, 8, 4, 9, 6, 4]), 4);
+  });
+});
 
 // 4. Given an array of integers, write a function that finds the pair in array whose sum is closest to 0.
 // If there are more than one pair, return any pair.
 // For e.g., [4,2, -1,3,-2,-3] → [2,-2]
 
-// describe("sum closest to zero", function () {
-//   it("pair whose sum is closest to zero is [2,-2]", function () {
-//     assert.deepStrictEqual(test.closestToZero([4, 2, -1, 3, -2, -3]), [-3, 3]);
-//   });
+describe("sum closest to zero", function () {
+  it("pair whose sum is closest to zero is [2,-2]", function () {
+    assert.deepStrictEqual(test.closestToZero([4, 2, -1, 3, -2, -3]), [-3, 3]);
+  });
 
-//   it("pair whose sum is closest to zero is [1, -1] ", function () {
-//     assert.deepStrictEqual(test.closestToZero([1, 4, -1, -2, -5]), [1, -1]);
-//   });
-// });
+  it("pair whose sum is closest to zero is [1, -1] ", function () {
+    assert.deepStrictEqual(test.closestToZero([1, 4, -1, -2, -5]), [1, -1]);
+  });
+});
 
 // // 5.  Write a function, that given two arrays representing two non-negative 
 // //  integers with digits, adds the two numbers, and return it as an array.
 
-// describe("add array elements as numbers", function () {
-//   it("add [3, 4, 2] and [4, 6, 5] as numbers and return [8,0,7] ", function () {
-//     assert.deepStrictEqual(test.addTwoNumbers([3, 4, 2], [4, 6, 5]), [8, 0, 7]);
-//   });
+describe("add array elements as numbers", function () {
+  it("add [3, 4, 2] and [4, 6, 5] as numbers and return [8,0,7] ", function () {
+    assert.deepStrictEqual(test.addTwoNumbers([3, 4, 2], [4, 6, 5]), [8, 0, 7]);
+  });
 
-//   it("add [1,1] and [1,2,3] as numbers and return [1,3,4]", function () {
-//     assert.deepStrictEqual(test.addTwoNumbers([1, 1], [1, 2, 3]), [1, 3, 4]);
-//   });
+  it("add [1,1] and [1,2,3] as numbers and return [1,3,4]", function () {
+    assert.deepStrictEqual(test.addTwoNumbers([1, 1], [1, 2, 3]), [1, 3, 4]);
+  });
 
-//   it("add [1,1] and [9,9] as numbers and return [1,1,0]", function () {
-//     assert.deepStrictEqual(test.addTwoNumbers([1, 1], [9, 9]), [1, 1, 0]);
-//   });
-// });
+  it("add [1,1] and [9,9] as numbers and return [1,1,0]", function () {
+    assert.deepStrictEqual(test.addTwoNumbers([1, 1], [9, 9]), [1, 1, 0]);
+  });
+});
 
 // //6. Given two binary strings, return their sum (also a binary string).
 // // The input strings are both non-empty and contains only characters 1 and 0.
 // // #add_binary
 
-// describe("add binary", function () {
-//   it("adding the binary strings '11' and '1' should give '100 ", function () {
-//     assert.strictEqual(test.addBinary("11", "1"), "100");
-//   });
+describe("add binary", function () {
+  it("adding the binary strings '11' and '1' should give '100 ", function () {
+    assert.strictEqual(test.addBinary("11", "1"), "100");
+  });
 
-//   it("adding the binary strings '1010' and '1011' should give '10101 ", function () {
-//     assert.strictEqual(test.addBinary("1010", "1011"), "10101");
-//   });
-// });
+  it("adding the binary strings '1010' and '1011' should give '10101 ", function () {
+    assert.strictEqual(test.addBinary("1010", "1011"), "10101");
+  });
+});
 
 // // 7. Given a positive integer, return its corresponding column title as appear in an Excel Sheet.
 // // For example:
@@ -160,38 +160,38 @@ const test = require("./programmingProject.js");
 // // from the array.
 // // #missing_number
 
-// describe("find the missing number", function () {
-//   it("the missing number from the given array is 2", function () {
-//     assert.strictEqual(test.missingNumber([3, 0, 1]), 2);
-//   });
+describe("find the missing number", function () {
+  it("the missing number from the given array is 2", function () {
+    assert.strictEqual(test.missingNumber([3, 0, 1]), 2);
+  });
 
-//   it("the missing number from the given array is 8", function () {
-//     assert.strictEqual(test.missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1]), 8);
-//   });
-// });
+  it("the missing number from the given array is 8", function () {
+    assert.strictEqual(test.missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1]), 8);
+  });
+});
 
 // // 11. Given a sorted array and a target value, return the index if the target is found. If not, return the
 // // index where it would be if it were inserted in order.
 // // You may assume no duplicates in the array.
 // // #search_insert_position
 
-// describe("search_insert_position of target", function () {
-//   it("5 exists in the given array at index of 2", function () {
-//     assert.strictEqual(test.searchInsertPosition([1, 3, 5, 6], 5), 2);
-//   });
+describe("search_insert_position of target", function () {
+  it("5 exists in the given array at index of 2", function () {
+    assert.strictEqual(test.searchInsertPosition([1, 3, 5, 6], 5), 2);
+  });
 
-//   it("2 should go in the given array at index of 1", function () {
-//     assert.strictEqual(test.searchInsertPosition([1, 3, 5, 6], 2), 1);
-//   });
+  it("2 should go in the given array at index of 1", function () {
+    assert.strictEqual(test.searchInsertPosition([1, 3, 5, 6], 2), 1);
+  });
 
-//   it("7 should go in the given array at index of 4", function () {
-//     assert.strictEqual(test.searchInsertPosition([1, 3, 5, 6], 7), 4);
-//   });
+  it("7 should go in the given array at index of 4", function () {
+    assert.strictEqual(test.searchInsertPosition([1, 3, 5, 6], 7), 4);
+  });
 
-//   it("0 should go in the given array at index of 0", function () {
-//     assert.strictEqual(test.searchInsertPosition([1, 3, 5, 6], 0), 0);
-//   });
-// });
+  it("0 should go in the given array at index of 0", function () {
+    assert.strictEqual(test.searchInsertPosition([1, 3, 5, 6], 0), 0);
+  });
+});
 
 // // 12. Given an integer array nums, find the contiguous subarray (containing at least one number)
 // // which has the largest sum and return its sum.
@@ -269,23 +269,23 @@ const test = require("./programmingProject.js");
 // // Output: [1,3,12,0,0]
 // // Note: you must do this in-place without making a copy of the array.
 
-// describe("move zeros", function () {
-//   it("", function () {
-//     assert.deepStrictEqual(test.moveZeros([0, 1, 0, 12, 3]), [1, 3, 12, 0, 0]);
-//   });
-// });
+describe("move zeros", function () {
+  it("", function () {
+    assert.deepStrictEqual(test.moveZeros([0, 1, 0, 12, 3]), [1, 3, 12, 0, 0]);
+  });
+});
 
 // // 16. Write a function that takes a string as input and reverse only the vowels of a string.
 // // # reverse_vowels_of_a_string
 
-describe("reverse vowels", function () {
-  it("given 'hello', reversing the vowels gives 'holle'", function () {
-    assert.strictEqual(test.reverseVowels("hello"), "holle");
-  });
-  it("given 'leetcode', reversing the vowels gives 'leotcede'", function () {
-    assert.strictEqual(test.reverseVowels("leetcode"), "leotcede");
-  });
-});
+// describe("reverse vowels", function () {
+//   it("given 'hello', reversing the vowels gives 'holle'", function () {
+//     assert.strictEqual(test.reverseVowels("hello"), "holle");
+//   });
+//   it("given 'leetcode', reversing the vowels gives 'leotcede'", function () {
+//     assert.strictEqual(test.reverseVowels("leetcode"), "leotcede");
+//   });
+// });
 
 // // 17. Write a function summaryRanges, such that given a sorted integer array nums, returns the
 // // smallest sorted list of ranges that cover all the numbers in the array exactly. That is, each

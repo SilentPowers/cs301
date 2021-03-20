@@ -53,7 +53,7 @@ let dups = 0;
   return dups;
 }
 
-console.log(countSocksPairs([1, 2, 1, 2, 1, 3, 2]));
+//console.log(countSocksPairs([1, 2, 1, 2, 1, 3, 2]));
 
 //4
 /*
@@ -71,16 +71,30 @@ Growth cycles Height Growth cycle
 4 7 Summer growth (plus 1)
 i.e. computeHeight(1,4) → 7
 
-Input: height 
+Input: original height when planted
 Output: height of tree after n - growth cycles
-process: 
+process: while loop to loop until n cycles, if/else if to represent 2 growth cycles, 
+ for spring and summer,
+maintain vararible growth and add to it depending on season
 */
 
-// const computeHeight = function(height, cycles){
+const computeHeight = function(height, cycles){
+let i = 0;
+let sum = height;
 
-
-// };
-
+  while(i < cycles){
+    if(i % 2 === 0){
+      sum = sum * 2;
+      i++;
+    }
+    else{
+      sum = sum + 1;
+      i++;
+    }
+  }
+  return sum;
+};
+//console.log(computeHeight(1,9));
 
 //#5
 // . Write a function, computeCharges, that will accept an array that contains objects with
@@ -195,4 +209,6 @@ let dups = 0;
   //findMinDistance([3,2,1,2,3]);
 
 exports.findMinDistance = findMinDistance;
-//exports.computeCharges = computeCharges;
+exports.computeCharges = computeCharges;
+exports.mostFrequentSight = mostFrequentSight;
+exports.computeHeight = computeHeight;

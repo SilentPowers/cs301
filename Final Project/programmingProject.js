@@ -223,7 +223,7 @@ else{
 return -1;
 
 };
-console.log(searchInsertPosition([1, 3, 5, 6], 5));
+//console.log(searchInsertPosition([1, 3, 5, 6], 5));
 
 
 
@@ -272,36 +272,36 @@ reverse only the vowels of a string.
 // // # reverse_vowels_of_a_string
 */
 
-const reverseVowels = function (string) {
-  const lastElement = string[string.length - 1];
-  let stringEl = "";
-  let newString = "";
-  let stringIndex = "";
-  for (let i = 0; i < string.length; i++) {
-    //check for vowels, and add vowels to stringEl
-    //use index for stringIndex to keep track of element of the vowel
-    if (string[i].includes("a") || string[i].includes("e") || string[i].includes("i") || string[i].includes("o")
-      || string[i].includes("u")) {
-      stringEl += string[i];
-      stringIndex += i;
-      continue;
-    }
-    //add non-vowels to newString
-    newString += string[i];
-  }
-  //start at last vowel and add to newString comparing it to first num of index
-  for (let j = 0; j <= stringIndex.length; j++) {
-    const index = stringIndex[j];
+// const reverseVowels = function (string) {
+//   const lastElement = string[string.length - 1];
+//   let stringEl = "";
+//   let newString = "";
+//   let stringIndex = "";
+//   for (let i = 0; i < string.length; i++) {
+//     //check for vowels, and add vowels to stringEl
+//     //use index for stringIndex to keep track of element of the vowel
+//     if (string[i].includes("a") || string[i].includes("e") || string[i].includes("i") || string[i].includes("o")
+//       || string[i].includes("u")) {
+//       stringEl += string[i];
+//       stringIndex += i;
+//       continue;
+//     }
+//     //add non-vowels to newString
+//     newString += string[i];
+//   }
+//   //start at last vowel and add to newString comparing it to first num of index
+//   for (let j = 0; j <= stringIndex.length; j++) {
+//     const index = stringIndex[j];
 
-    // if (stringIndex[j]) {
-    //   newString += stringEl[j];
-    // }
-    console.log(newString[index] + stringEl[j]);
-  }
+//     // if (stringIndex[j]) {
+//     //   newString += stringEl[j];
+//     // }
+//     console.log(newString[index] + stringEl[j]);
+//   }
   //console.log(stringEl);
-  console.log(newString);
+  //console.log(newString);
 
-};
+// };
 //reverseVowels("hello");
 
 
@@ -356,11 +356,13 @@ const firstDuplicateValue = function (array) {
 
 
 
-//exports.addTwoNumbers = addTwoNumbers; //works
+exports.addTwoNumbers = addTwoNumbers; //works
 exports.addToTarget = addToTarget;
-//exports.mostFrequent = mostFrequent; //works
+exports.mostFrequent = mostFrequent; //works
 exports.closestToZero = closestToZero;
-//exports.addBinary = addBinary; //works
-//exports.missingNumber = missingNumber;
+exports.addBinary = addBinary; //works
+exports.missingNumber = missingNumber;
+exports.moveZeros = moveZeros;
+exports.searchInsertPosition = searchInsertPosition;
 
 
